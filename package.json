@@ -4,16 +4,18 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "cross-env NODE_ENV=test pnpm --filter @cyriex-ui/components test",
 		"dev:play": "pnpm --filter @cyriex-ui/play dev",
 		"docs:dev": "pnpm --filter @cyriex-ui/docs dev",
 		"docs:build": "pnpm --filter @cyriex-ui/docs build",
 		"core:build": "pnpm --filter cyriex-ui build",
 		"storybook": "pnpm --filter @cyriex-ui/play storybook",
-		"build": "run-s build-components",
+		"build": "run-s build-hooks build-components",
 		"build-storybook": "pnpm --filter @cyriex-ui/play  build-storybook",
 		"build-components": "cross-env NODE_ENV=production pnpm --filter cyriex-ui build",
-		"build-components:dev": "cross-env NODE_ENV=development pnpm --filter cyriex-ui build:watch"
+		"build-components:dev": "cross-env NODE_ENV=development pnpm --filter cyriex-ui build:watch",
+		"build-hooks": "cross-env NODE_ENV=production pnpm --filter @cyriex-ui/hooks build",
+		"build-hooks:dev": "cross-env NODE_ENV=development pnpm --filter @cyriex-ui/hooks build"
 	},
 	"type": "module",
 	"keywords": [],
