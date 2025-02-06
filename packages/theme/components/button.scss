@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "../mixins/mixins.scss" as *;
+
+.base-button {
+	--base-button-font-weight: var(--base-font-weight-primary);
+	--base-button-border-color: var(--base-border-color);
+	--base-button-bg-color: var(--base-fill-color-blank);
+	--base-button-text-color: var(--base-text-color-regular);
+	--base-button-disabled-text-color: var(--base-disabled-text-color);
+	--base-button-disabled-bg-color: var(--base-fill-color-blank);
+	--base-button-disabled-border-color: var(--base-border-color-light);
+	--base-button-hover-text-color: var(--base-color-primary);
+	--base-button-hover-bg-color: var(--base-color-primary-light-9);
+	--base-button-hover-border-color: var(--base-color-primary-light-7);
+	--base-button-active-text-color: var(--base-button-hover-text-color);
+	--base-button-active-border-color: var(--base-color-primary);
+	--base-button-active-bg-color: var(--base-button-hover-bg-color);
+	--base-button-outline-color: var(--base-color-primary-light-5);
+	--base-button-active-color: var(--base-text-color-primary);
+}
+
+@include elb(button) {
+	margin-left: var(--base-spacing-2);
+	line-height: 1.2;
+
+	span {
+		max-width: 143px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}

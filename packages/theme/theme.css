@@ -1,0 +1,99 @@
+:root {
+	/* colors */
+	--base-color-white: #fff;
+	--base-color-black: #000;
+	--base-brand: #1162fe;
+	--colors: (primary: #1162fe, success: #0cd982, warning: #fcc33c, danger: #ff5d59, info: #909399);
+	--base-default: #1162fe;
+	--base-primary: #1162fe;
+	--base-success: #0cd982;
+	--base-info: #909399;
+	--base-warning: #fcc33c;
+	--base-danger: #ff5d59;
+	--base-bg-color: #fff;
+	--base-bg-color-page: #f2f3f5;
+	--base-bg-color-overlay: #fff;
+	--base-text-color-primary: #343a40;
+	--base-text-color-regular: #2d405e;
+	--base-text-color-secondary: #bfc3d6;
+	--base-text-color-placeholder: #bfc3d6;
+	--base-text-color-disabled: #c0c4cc;
+	--base-border-color: #dee2ee;
+	--base-border-color-light: #e4e7ed;
+	--base-border-color-lighter: #ebeef5;
+	--base-border-color-extra-light: #f2f6fc;
+	--base-border-color-dark: #d4d7de;
+	--base-border-color-darker: #cdd0d6;
+	--base-fill-color: #f0f2f5;
+	--base-fill-color-light: #f5f7fa;
+	--base-fill-color-lighter: #fafafa;
+	--base-fill-color-extra-light: #fafcff;
+	--base-fill-color-dark: #ebedf0;
+	--base-fill-color-darker: #e6e8eb;
+	--base-fill-color-blank: #fff;
+
+	@each $val, $color in var(--colors) {
+		--base-color-$(val): $(color);
+
+		@for $i from 3 to 9 {
+			--base-color-$(val)-light-$(i): mix(#fff, $(color), 0$ (i));
+		}
+
+		--base-color-$(val)-dark-2: mix(#000, $(color), 0.2);
+	}
+
+	/* border */
+	--base-border-width: 1px;
+	--base-border-style: solid;
+	--base-border-color-hover: var(--base-text-color-disabled);
+	--base-border: var(--base-border-width) var(--base-border-style) var(--base-border-color);
+	--base-border-radius-base: 4px;
+	--base-border-radius-small: 2px;
+	--base-border-radius-round: 20px;
+	--base-border-radius-circle: 100%;
+
+	/* font */
+	--base-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", Arial, sans-serif;
+	--base-font-weight-primary: 500;
+	--base-font-size-xs: 12px;
+	--base-font-size-sm: 14px;
+	--base-font-size-base: 16px;
+	--base-font-size-lg: 18px;
+	--base-font-size-xl: 20px;
+	--base-font-size-2xl: 24px;
+	--base-font-size-3xl: 26px;
+	--base-font-size-4xl: 28px;
+	--base-font-size-5xl: 30px;
+	--base-font-size-6xl: 36px;
+	--base-font-size-7xl: 48px;
+	--base-font-size-8xl: 50px;
+	--base-font-size-9xl: 60px;
+
+	/** spacing */
+	--base-spacing-extra: 2px;
+	--base-spacing-1: 4px;
+	--base-spacing-extra-1: 6px;
+	--base-spacing-2: 8px;
+	--base-spacing-extra-2: 10px;
+	--base-spacing-3: 12px --base-spacing-extra-3: 14px --spacing-4: 16px --base-spacing-extra-4: 18px;
+	--base-spacing-5: 20px;
+	--base-spacing-extra-5: 22px;
+	--base-spacing-6: 24px;
+	--base-spacing-7: 28px;
+	--base-spacing-8: 32px;
+
+	/* disabled */
+	--base-disabled-bg-color: var(--base-fill-color-light);
+	--base-disabled-text-color: var(--base-text-color-placeholder);
+	--base-disabled-border-color: var(--base-border-color-light);
+
+	/* animation */
+	--base-transition-duration: 0.4s;
+	--base-transition-duration-fast: 0.2s;
+}
+
+/* 暗黑主题 */
+body.dark {
+	--base-color-white: #000;
+	--base-color-black: #fff;
+}

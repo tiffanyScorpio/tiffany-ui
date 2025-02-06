@@ -1,0 +1,26 @@
+{
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	"compilerOptions": {
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"baseUrl": ".",
+		"types": ["node", "vite/client", "element-plus/global"],
+		"paths": {
+			"element-plus": ["./node_modules/element-plus"]
+		},
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true
+	},
+	"include": [
+		"env.d.ts",
+		"packages/**/*.ts",
+		"packages/**/*.tsx",
+		"packages/**/*.vue",
+		"packages/play/src/stories/*.stories.ts",
+		"vitest.config.ts",
+		"auto-imports.d.ts"
+	]
+}
