@@ -2,25 +2,9 @@
 	"name": "@cyriex-ui/hooks",
 	"version": "1.0.0",
 	"description": "",
-	"type": "module",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"exports": {
-		".": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
-		}
-	},
+	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "vite build"
-	},
-	"peerDependencies": {
-		"vue": "^3.5.13",
-		"lodash-es": "^4.17.21"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "",
