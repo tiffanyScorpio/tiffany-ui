@@ -10,7 +10,10 @@
 		"docs:build": "pnpm --filter @cyriex-ui/docs build",
 		"core:build": "pnpm --filter cyriex-ui build",
 		"storybook": "pnpm --filter @cyriex-ui/play storybook",
-		"build-storybook": "pnpm --filter @cyriex-ui/play  build-storybook"
+		"build": "run-s build-components",
+		"build-storybook": "pnpm --filter @cyriex-ui/play  build-storybook",
+		"build-components": "cross-env NODE_ENV=production pnpm --filter cyriex-ui build",
+		"build-components:dev": "cross-env NODE_ENV=development pnpm --filter cyriex-ui build:watch"
 	},
 	"type": "module",
 	"keywords": [],
