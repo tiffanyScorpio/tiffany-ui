@@ -5,7 +5,7 @@
 		"baseUrl": ".",
 		"types": ["node", "vite/client", "element-plus/global"],
 		"paths": {
-			"tiffany-ui": ["./packages/core"],
+			// "tiffany-ui": ["./packages/core"],
 			"element-plus": ["./node_modules/element-plus"]
 		},
 		/* Linting */
