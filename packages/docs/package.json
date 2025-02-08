@@ -9,6 +9,9 @@
 		"build": "vitepress build ./",
 		"preview": "vitepress preview ./"
 	},
+	"dependencies": {
+		"tiffany-ui": "workspace:*"
+	},
 	"devDependencies": {
 		"@vitepress-demo-preview/component": "^2.3.2",
 		"@vitepress-demo-preview/plugin": "^1.2.3",
