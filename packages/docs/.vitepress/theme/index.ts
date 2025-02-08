@@ -16,6 +16,6 @@ export default {
 		app.use(ElementPlus, {
 			locale: { ...zhCn },
 		});
-		app.use(TiffanyUI);
+		// app.use(TiffanyUI);
 	},
 };
