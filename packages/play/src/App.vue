@@ -8,7 +8,8 @@
 </script>
 
 <template>
-  <base-button type="primary">Primary</base-button>
+  <BaseText>111111</BaseText>
+  <BaseButton type="primary">Primary</BaseButton>
   <base-button>123dadgzfgshshsthstshthsrth</base-button>
 </template>
 

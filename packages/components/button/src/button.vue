@@ -29,7 +29,7 @@ import type { VNode } from 'vue';
 import { ElButton, ElTooltip } from 'element-plus';
 import { type ButtonInstance, buttonEmits, buttonProps } from './type'
 import { throttle } from 'lodash-es'
-import { tooltipAutoShow } from "@cyriex-ui/directives"
+import { tooltipAutoShow } from "@tiffany-ui/directives"
 import { useThrottle } from '@vueuse/core';
 // const slots = defineSlots();
 const slots = useSlots();
@@ -71,5 +71,5 @@ defineExpose<ButtonInstance>({
 });
 </script>
 <style lang="scss" coped>
-@use "./button"
+@use "./button";
 </style>

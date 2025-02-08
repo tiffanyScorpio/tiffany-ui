@@ -1,14 +1,12 @@
 {
-	"name": "cyriex-ui",
+	"name": "tiffany-ui",
 	"version": "1.0.0",
 	"description": "components library by Vue3 + Ts + element plus",
 	"type": "module",
 	"main": "./dist/umd/index.umd.cjs",
 	"module": "./dist/es/index.js",
 	"types": "./dist/types/core/index.d.ts",
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"exports": {
 		".": {
 			"import": "./dist/es/index.js",
@@ -20,9 +18,7 @@
 			"require": "./dist/"
 		}
 	},
-	"sideEffects": [
-		"./dist/index.css"
-	],
+	"sideEffects": ["./dist/index.css"],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "pnpm run build-only && pnpm run build-umd",
@@ -41,7 +37,7 @@
 		"element-plus": "^2.9.2"
 	},
 	"devDependencies": {
-		"@cyriex-ui/components": "workspace:*"
+		"@tiffany-ui/components": "workspace:*"
 	},
 	"peerDependencies": {
 		"vue": "^3.5.13"

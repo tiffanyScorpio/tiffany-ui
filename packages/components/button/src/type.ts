@@ -6,10 +6,10 @@
  */
 import { type Component, type ComputedRef, type Ref } from "vue";
 import type { ButtonProps as ElButtonProps } from "element-plus";
-import { useSizeProp } from "@cyriex-ui/hooks";
-import { iconPropType } from "@cyriex-ui/utils";
+import { useSizeProp } from "@tiffany-ui/hooks";
+import { iconPropType } from "@tiffany-ui/utils";
 
-export const buttonTypes = ["default", "primary", "success", "warning", "info", "danger", "text", ""] as const;
+export const ButtonTypes = ["default", "primary", "success", "warning", "info", "danger", "text", ""] as const;
 export const SizeType = ["default", "small", "mini", ""];
 export const ButtonNativeTypes = ["button", "submit", "reset"] as const;
 
@@ -20,7 +20,8 @@ export const buttonProps = {
 		default: "button",
 	},
 	nativeType: {
-		type: ButtonNativeTypes,
+		type: String,
+		values: ButtonNativeTypes,
 		default: "button",
 	},
 	/** 大小 */
@@ -28,7 +29,7 @@ export const buttonProps = {
 	/** 类型 */
 	type: {
 		type: String,
-		values: buttonTypes,
+		values: ButtonTypes,
 		default: "",
 	},
 	/** 是否显示 文字按钮  */

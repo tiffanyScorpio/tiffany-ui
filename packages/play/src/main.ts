@@ -8,9 +8,9 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 
-import CyriexUi from "cyriex-ui";
-// import 'cyriex-ui/dist/index.css';
+import TiffanyUI from "tiffany-ui";
+import "tiffany-ui/dist/index.css";
 
 const app = createApp(App);
-app.use(CyriexUi);
+app.use(TiffanyUI);
 app.mount("#app");

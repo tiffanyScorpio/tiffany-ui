@@ -4,7 +4,7 @@
  * @FilePath: \packages\hooks\use-size.ts
  * @Date: 2025-01-19 18:42:06
  */
-import { type ComponentSize, componentSizes } from "@cyriex-ui/constants";
+import { type ComponentSize, componentSizes } from "@tiffany-ui/constants";
 
 export const useSizeProp = {
 	type: String,

@@ -15,7 +15,7 @@ export default defineConfig({
 		outDir: "dist/umd",
 		lib: {
 			entry: resolve(__dirname, "../index.ts"),
-			name: "CyriexUI",
+			name: "TiffanyUI",
 			fileName: "index",
 			formats: ["umd"],
 		},

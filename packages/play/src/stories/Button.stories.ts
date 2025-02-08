@@ -1,8 +1,8 @@
 import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 import { fn, within, userEvent, expect } from "@storybook/test";
 import { Search } from "@element-plus/icons-vue";
-import { BaseButton } from "cyriex-ui";
-import "cyriex-ui/dist/index.css";
+import { BaseButton } from "tiffany-ui";
+import "tiffany-ui/dist/index.css";
 type Story = StoryObj<typeof BaseButton> & { argTypes?: ArgTypes };
 
 const meta: Meta<typeof BaseButton> = {

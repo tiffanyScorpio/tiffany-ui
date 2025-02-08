@@ -1,5 +1,5 @@
 {
-	"name": "@cyriex-ui/hooks",
+	"name": "@tiffany-ui/hooks",
 	"version": "1.0.0",
 	"type": "module",
 	"module": "./dist/index.js",

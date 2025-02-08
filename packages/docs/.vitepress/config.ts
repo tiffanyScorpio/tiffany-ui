@@ -8,9 +8,9 @@ import { defineConfig } from "vitepress";
 import { containerPreview, componentPreview } from "@vitepress-demo-preview/plugin";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: "Cyriex UI",
-	description: "cyriex 私有组件库",
-	base: "/cyriex-ui/", // 用于github加载样式文件
+	title: "Tiffany UI",
+	description: "tiffany 私有组件库",
+	base: "/tiffany-ui/", // 用于github加载样式文件
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [

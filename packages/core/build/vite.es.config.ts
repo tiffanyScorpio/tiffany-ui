@@ -33,7 +33,7 @@ export default defineConfig({
 		outDir: "dist/es",
 		lib: {
 			entry: resolve(__dirname, "../index.ts"),
-			name: "CyriexUI",
+			name: "TiffanyUI",
 			fileName: "index",
 			formats: ["es"],
 		},

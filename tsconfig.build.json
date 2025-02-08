@@ -25,7 +25,8 @@
 		"types": ["node"],
 		"baseUrl": "./",
 		"paths": {
-			"@cyriex-ui/components": ["./packages/components"]
+			"tiffany-ui": ["./packages/core"],
+			"@tiffany-ui/components": ["./packages/components"]
 		}
 	},
 	"include": [

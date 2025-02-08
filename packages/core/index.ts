@@ -6,10 +6,10 @@
  */
 import makeInstaller from "./makeInstaller";
 import components from "./components";
-import "@cyriex-ui/theme/index.css";
+import "@tiffany-ui/theme/index.css";
 
 const installer = makeInstaller(components);
 
-// export * from "@cyriex-ui/components";
+// export * from "@tiffany-ui/components";
 export * from "../components";
 export default installer;

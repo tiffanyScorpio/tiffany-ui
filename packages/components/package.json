@@ -1,10 +1,10 @@
 {
-	"name": "@cyriex-ui/components",
+	"name": "@tiffany-ui/components",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.ts",
 	"scripts": {
-		"test": "cross-env NODE_ENV=test pnpm --filter @cyriex-ui/hooks build"
+		"test": "cross-env NODE_ENV=test pnpm --filter @tiffany-ui/hooks build"
 	},
 	"keywords": [],
 	"author": "",

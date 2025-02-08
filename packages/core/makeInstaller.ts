@@ -1,16 +1,16 @@
 /*
- * @Description: 
+ * @Description:
  * @Author: liuxiaodan
  * @FilePath: \packages\core\makeInstaller.ts
  * @Date: 2025-01-19 10:23:37
  */
 import type { App, Plugin } from "vue";
-// import { INSTALLED_KEY } from "@cyriex-ui/constants";
+// import { INSTALLED_KEY } from "@tiffany-ui/constants";
 import { each, get, set } from "lodash-es";
 // import {
 //   provideGlobalConfig,
 //   type ConfigProviderProps,
-// } from "@cyriex-ui/components";
+// } from "@tiffany-ui/components";
 
 // export default function makeInstaller(components: Plugin[]) {
 //   const install = (app: App, options?: ConfigProviderProps) => {
@@ -28,10 +28,9 @@ import { each, get, set } from "lodash-es";
 // }
 
 export default function makeInstaller(components: Plugin[]) {
-    const install = (app: App) =>    each(components, (c) => {
-      app.use(c);
-    });
-    return install;
-  }
-
-  
+	const install = (app: App) =>
+		each(components, (c) => {
+			app.use(c);
+		});
+	return install;
+}

@@ -1,5 +1,5 @@
 {
-	"name": "cyriex-ui",
+	"name": "tiffany-ui",
 	"version": "1.0.0",
 	"description": "components library by Vue3 + Ts + element plus",
 	"type": "module",
@@ -43,7 +43,7 @@
 		"element-plus": "^2.9.2"
 	},
 	"devDependencies": {
-		"@cyriex-ui/components": "workspace:*"
+		"@tiffany-ui/components": "workspace:*"
 	},
 	"peerDependencies": {
 		"vue": "^3.5.13"

@@ -5,7 +5,7 @@
  * @Date: 2025-01-16 22:05:08
  */
 import Button from "./src/button.vue";
-import {withInstall} from "@cyriex-ui/utils"
+import {withInstall} from "@tiffany-ui/utils"
 
 export const BaseButton = withInstall(Button);
 

@@ -9,7 +9,7 @@ import type {
 	ObjectDirective,
 	VNode
   } from 'vue'
-import { getStyle } from '@cyriex-ui/utils';
+import { getStyle } from '@tiffany-ui/utils';
 /**
  * show-overflow-tooltip for text
  * 当text没有被折叠时，不显示tooltip

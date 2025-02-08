@@ -19,7 +19,7 @@ text: Button 按钮
 ## 安装
 
 ```bash
-npm i @cyriex-ui --save
+npm i @tiffany-ui --save
 ```
 
 ## 开始使用
@@ -28,13 +28,13 @@ npm i @cyriex-ui --save
 
 ```js
 // 引入所有组件
-import CyriexUi from "cyriex-ui";
+import TiffanyUI from "tiffany-ui";
 // 引入样式
-import "cyriex-ui/dist/index.css";
+import "tiffany-ui/dist/index.css";
 
 import App from "./App.vue";
 // 全局使用
-createApp(App).use(CyriexUi).mount("#app");
+createApp(App).use(TiffanyUI).mount("#app");
 ```
 
 ```vue
@@ -45,14 +45,14 @@ createApp(App).use(CyriexUi).mount("#app");
 
 **单个导入**
 
-Cyriex-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
+tiffany-ui 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
 
 ```vue
 <template>
 	<base-button>我是 Button</base-button>
 </template>
 <script>
-import { BaseButton } from " cyriex-ui";
+import { BaseButton } from " tiffany-ui";
 export default {
 	components: { BaseButton },
 };
