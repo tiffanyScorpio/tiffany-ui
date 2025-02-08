@@ -40,10 +40,10 @@ export default defineConfig({
 		rollupOptions: {
 			external: ["vue", "element-plus", "@element-plus/icons-vue", "async-validator", "@popperjs/core"],
 			output: {
-				exports: "named",
-				globals: {
-					vue: "Vue",
-				},
+				// exports: "named",
+				// globals: {
+				// 	vue: "Vue",
+				// },
 				// 设置静态资源文件的命名模式
 				assetFileNames: (chunkInfo) => {
 					if (chunkInfo.name === "style.css") {

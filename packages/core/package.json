@@ -25,12 +25,13 @@
 	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "run-p build-es build-umd",
+		"build": "run-p build-es build-umd move-style",
 		"build:watch": "pnpm run clean build-es:watch build-umd:watch",
 		"build-es": "vite build --config build/vite.es.config.ts",
 		"build-umd": "vite build --config build/vite.umd.config.ts",
 		"build-es:watch": "vite build --watch --config build/vite.es.config.ts",
-		"build-umd:watch": "vite build --watch --config build/vite.umd.config.ts"
+		"build-umd:watch": "vite build --watch --config build/vite.umd.config.ts",
+		"move-style": "move-file dist/es/index.css dist/index.css"
 	},
 	"keywords": [],
 	"author": "",
