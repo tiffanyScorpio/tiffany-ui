@@ -10,7 +10,7 @@ import { containerPreview, componentPreview } from "@vitepress-demo-preview/plug
 export default defineConfig({
 	title: "Tiffany UI",
 	description: "tiffany 私有组件库",
-	base: "../tiffany-ui/", // 是github上项目的名字，用于github加载样式文件
+	base: "./", // 是github上项目的名字，用于github加载样式文件
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
